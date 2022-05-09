@@ -8,6 +8,44 @@
 }
 
 .description {
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  /* outline: 1px solid tomato; */
+  text-align: center;
+}
+.avatar {
+  border: 1px solid rgb(254, 45, 45, 0.1);
+  border-radius: 25px;
+}
+.username {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.tag {
+  margin-bottom: 10px;
+}
+.line {
+  display: block;
+  height: 1px;
+  width: auto;
+  background-color: rgb(254, 45, 45, 0.1);
+}
+.stats {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.label {
+  display: block;
+  text-align: center;
+}
+
+.quantity {
+  margin-top: 5px;
+  display: block;
+  text-align: center;
 }
