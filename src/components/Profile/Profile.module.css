@@ -1,0 +1,13 @@
+.profile {
+  margin: 10px auto;
+  padding: 15px;
+  width: 350px;
+  border: 1px solid rgb(254, 45, 45, 0.1);
+  border-radius: 25px;
+  box-shadow: 2px 2px 2px 2px rgb(254, 45, 45, 0.1);
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+}
