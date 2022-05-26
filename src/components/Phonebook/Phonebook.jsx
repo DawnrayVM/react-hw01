@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PhonebookForm from './PhonebookForm';
 import Contacts from './Contacts';
+import styles from './Phonebook.module.css';
 
 const Phonebook = () => {
   const [state, setState] = useState({ contacts: [], filter: '' });
@@ -22,8 +23,8 @@ const Phonebook = () => {
     }));
   };
   return (
-    <section className="phonebook">
-      <h2>Phonebook</h2>
+    <section className={styles.phonebook}>
+      <h2 className={styles.phonebookTitle}>Phonebook</h2>
       <PhonebookForm addContact={handleSubmit} />
       <Contacts
         contacts={state.contacts}

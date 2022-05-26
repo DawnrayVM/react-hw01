@@ -26,6 +26,10 @@ const Feedback = () => {
           [name]: prevState[name] + 1,
         }));
   };
+  useEffect(() => {
+    const counters = localStorage.getItem('counters');
+    counters ? setState(JSON.parse(counters)) : setState(initialState);
+  }, []);
 
   useEffect(
     () =>
@@ -36,6 +40,10 @@ const Feedback = () => {
       })),
     [state.bad, state.good, state.neutral, state.total]
   );
+  useEffect(() => {
+    state !== initialState &&
+      localStorage.setItem('counters', JSON.stringify(state));
+  }, [state]);
 
   return (
     <>
